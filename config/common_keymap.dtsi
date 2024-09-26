@@ -220,7 +220,6 @@
     to_set {
       bindings = <&to SET>;
       key-positions = <2 3 4>;
-      layers = <NAV>;
       timeout-ms = <30>;
       };
     bt_clr {
@@ -352,7 +351,7 @@
 #define __________SET_L3__________  &none   &none  &none  &none  &none  &none
 #define _________THUMB_SET_L_______ &cl_num   &cl_sym  &ss_cw &none
 
-#define __________SET_R1__________  &none    &bt BT_SEL 0 &bt BT_PRV &bt BT_NXT &none    &none
+#define __________SET_R1__________  &none    &bt BT_SEL 0 &bt BT_PRV &bt BT_NXT &bt BT_CLR    &none
 #define __________SET_R2__________  &none    &none        &none      &none      &none    &none
 #define __________SET_R3__________  &none    &none        &none      &none      &none    &none
 #define _________THUMB_SET_R_______ &none &kp LCTRL  &to DEF    &cl_nav
