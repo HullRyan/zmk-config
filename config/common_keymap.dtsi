@@ -140,11 +140,11 @@
 
   // Key numbers
   // -----------------------------------------------------------------------------------------
-  // | NONE |  1  |  2  |  3  |  4  |  5  |   |  6  |  7   |  8  |  9  |  10  | NONE |
-  // | NONE |  13 |  14 |  15 |  16 |  17 |   |  18 |  19  |  20 |  21 |  22  | NONE |
-  // | NONE |  25 |  26 |  27 |  28 |  29 |   |  30 |  31  |  32 |  33 |  34  | NONE |
-  //                                |  36 |   |  37 |
-  //              |  38 |  39 |  40 |  41 |   |  42 |  43 |  44  |  45 |
+  // | 0  |  1  |  2  |  3  |  4  |  5  |   |  6  |  7   |  8  |  9  |  10  | 11 |
+  // | 12 |  13 |  14 |  15 |  16 |  17 |   |  18 |  19  |  20 |  21 |  22  | 23 |
+  // | 24 |  25 |  26 |  27 |  28 |  29 |   |  30 |  31  |  32 |  33 |  34  | 35 |
+  //                              |  36 |   |  37 |
+  //            |  38 |  39 |  40 |  41 |   |  42 |  43 |  44  |  45 |
 
   // Homerow bindings
   combos {
@@ -207,6 +207,12 @@
     right_alt_cmd {
       bindings = <&kp RG(RIGHT_ALT)>;
       key-positions = <19 20 21>;
+      timeout-ms = <30>;
+    };
+    
+    right_enter {
+      bindings = <&kp ENTER>;
+      key-positions = <20 21>;
       timeout-ms = <30>;
     };
 
@@ -296,13 +302,15 @@
 
 #define __________DEF_L1__________  &kp GRAVE   &kp Q   &kp W   &kp E   &kp R      &kp T
 #define __________DEF_L2__________  &kp TAB  &kp A   &kp S   &kp D   &kp F      &kp G
-#define __________DEF_L3__________  &none   &kp Z   &kp X   &kp C   &kp V      &kp B  &kp ESC
-#define _________THUMB_DEF_L_______ &cl_num   &cl_sym  &ss_cw &LGUI
+#define __________DEF_L3__________  &kp LCTRL  &kp Z   &kp X   &kp C   &kp V      &kp B
+#define __________DEF_L4__________  &kp ESC
+#define _________THUMB_DEF_L_______ &cl_num   &cl_sym  &ss_cw  &LGUI
 
-#define __________DEF_R1__________  &kp Y      &kp U      &kp I     &kp O   &kp P    &none
-#define __________DEF_R2__________  &kp H      &kp J      &kp K     &kp L   &kp SQT  &none
-#define __________DEF_R3__________  &kp N      &kp M      &kp COMMA &kp DOT &kp BSPC &none
-#define _________THUMB_DEF_R_______ &cl_nav &kp SPACE  &mt LGUI SPACE    &cl_nav
+#define __________DEF_R1__________  &kp Y      &kp U      &kp I     &kp O   &kp P    &kp MINUS
+#define __________DEF_R2__________  &kp H      &kp J      &kp K     &kp L   &kp SEMICOLON  &kp SQT
+#define __________DEF_R3__________  &kp N      &kp M      &kp COMMA &kp DOT &kp BSPC &kp SLASH
+#define __________DEF_R4__________  &mkp RCLK
+#define _________THUMB_DEF_R_______ &cl_nav &kp SPACE  &mt LEFT_ALT BACKSPACE    &kp DEL
 // #define _________THUMB_DEF_R_______ &cl_nav &skq LCTRL  &kp SPACE  &cl_nav  
 
 
@@ -335,6 +343,7 @@
 #define __________NAV_R1__________  &kp LG(C)       &kp LG(Z)             &to DEF                &kp DEL          &kp LG(V)  &none
 #define __________NAV_R2__________  &kp LEFT_ARROW  &kp DOWN_ARROW        &kp UP_ARROW           &kp RIGHT_ARROW  &none      &none
 #define __________NAV_R3__________  &none           &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &none            &trans     &none
+#define __________DEF_R4__________  &mkp MCLK
 #define _________THUMB_NAV_R_______ &none &kp LCTRL  &to DEF    &cl_nav
 //#define _________THUMB_NAV_R_______ &none &sk LCTRL  &to DEF    &cl_nav
 
