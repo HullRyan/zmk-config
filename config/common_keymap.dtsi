@@ -304,7 +304,7 @@
 #define __________DEF_L2__________  &kp TAB  &kp A   &kp S   &kp D   &kp F      &kp G
 #define __________DEF_L3__________  &kp LCTRL  &kp Z   &kp X   &kp C   &kp V      &kp B
 #define __________DEF_L4__________  &kp ESC
-#define _________THUMB_DEF_L_______ &cl_num   &cl_sym  &ss_cw  &LGUI
+#define _________THUMB_DEF_L_______ &cl_num   &cl_sym  &ss_cw  &kp LGUI
 
 #define __________DEF_R1__________  &kp Y      &kp U      &kp I     &kp O   &kp P    &kp MINUS
 #define __________DEF_R2__________  &kp H      &kp J      &kp K     &kp L   &kp SEMICOLON  &kp SQT
