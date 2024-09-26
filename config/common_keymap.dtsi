@@ -343,7 +343,7 @@
 #define __________NAV_R1__________  &kp LG(C)       &kp LG(Z)             &to DEF                &kp DEL          &kp LG(V)  &none
 #define __________NAV_R2__________  &kp LEFT_ARROW  &kp DOWN_ARROW        &kp UP_ARROW           &kp RIGHT_ARROW  &none      &none
 #define __________NAV_R3__________  &none           &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &none            &trans     &none
-#define __________DEF_R4__________  &mkp MCLK
+#define __________NAV_R4__________  &mkp MCLK
 #define _________THUMB_NAV_R_______ &none &kp LCTRL  &to DEF    &cl_nav
 //#define _________THUMB_NAV_R_______ &none &sk LCTRL  &to DEF    &cl_nav
 
